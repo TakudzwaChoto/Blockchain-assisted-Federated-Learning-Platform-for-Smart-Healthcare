@@ -1,0 +1,136 @@
+/* Dark Mode Styles */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --card-bg: #ffffff;
+  --nav-bg: #ffffff;
+}
+
+.dark {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #404040;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #808080;
+  --border-color: #404040;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --card-bg: #2d2d2d;
+  --nav-bg: #2d2d2d;
+}
+
+/* Apply dark mode to common elements */
+.dark .app-layout {
+  background: var(--bg-primary);
+}
+
+.dark .navbar {
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dark .nav-item {
+  color: var(--text-secondary);
+}
+
+.dark .nav-item:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.dark .nav-item.active {
+  background: #667eea;
+  color: white;
+}
+
+.dark .main-content {
+  background: var(--bg-primary);
+}
+
+.dark .footer {
+  background: #1a1a1a;
+  color: var(--text-secondary);
+}
+
+.dark .footer-links a {
+  color: var(--text-tertiary);
+}
+
+.dark .footer-links a:hover {
+  color: var(--text-primary);
+}
+
+.dark .card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.dark .el-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.dark .el-card__header {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dark .el-button--default {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.dark .el-button--default:hover {
+  background: var(--bg-secondary);
+}
+
+.dark .el-input__wrapper {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dark .el-input__inner {
+  color: var(--text-primary);
+}
+
+.dark .el-select__wrapper {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dark .el-dropdown-menu {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.dark .el-dropdown-menu__item {
+  color: var(--text-primary);
+}
+
+.dark .el-dropdown-menu__item:hover {
+  background: var(--bg-tertiary);
+}
+
+.dark .el-dialog {
+  background: var(--card-bg);
+}
+
+.dark .el-dialog__header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dark .el-dialog__title {
+  color: var(--text-primary);
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
